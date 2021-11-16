@@ -1,0 +1,72 @@
+:root {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+        url(https://images.unsplash.com/photo-1628692945421-21162c93a8a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
+    height: 100vh;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+.event-title {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 200;
+}
+
+#user-display {
+    text-align: center;
+    opacity: 0;
+    transition: all 1s;
+}
+
+#user-display.in {
+    opacity: 1;
+}
+
+#user-input {
+    opacity: 0;
+    transition: all 1s;
+}
+
+#user-input.in {
+    opacity: 1;
+}
+
+.countdown-box {
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.time {
+    margin: 0;
+}
+
+.info {
+    font-size: 1rem;
+}
+
+#reset {
+    width: 7rem;
+    align-self: center;
+}
